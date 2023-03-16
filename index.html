@@ -8,7 +8,14 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>Mediante atributos en HTML</h1>
-    <button onClick="alert('Ingreso exitoso, Bienvenido')">Ingresar</button>
+    <h1>Bloque de JavaScript dentro de HTML</h1>
+    <script>
+        function prueba() {
+            alert("Bienvenido!");
+        }
+    </script>
+
+    <button onClick="prueba()">Ingresar</button>
+    <!-- aqui creamos un boton con el evento click, llamando la funcion prueba y ese boton mostrara el texto de ingresar -->
 </body>
 </html>
