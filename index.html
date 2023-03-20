@@ -8,15 +8,16 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>querySelector dentro de HTML</h1>
     <button>Ingresar</button>
 
-    <script>
-    const button = document.querySelector("button");
-    button.onclick = function() {
-        alert("Ingreso exitoso, Bienvenido!");
-    }
-    </script>
-    <!-- Creamos el boton y lo llamamos dentro del script con querySelector, luego agregamos el evento -->
+<script>
+let button = document.querySelector("button");
+let doTask = () => alert("BIenvenido!");
+button.setAttribute("onclick", "doTask()");
+</script>
+
+<!-- La linea 15 define una funcion llamada doTask() que muestra una alerta con el texto "Bienvenido!".
+La linea 16 utiliza el método setAttribute() para agregar un atributo "onclick" al boton. Este atributo 
+cuando el boton es clicado, se debe ejecutar la funcion doTask() que se definio previamente.-->
 </body>
 </html>
