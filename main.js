@@ -19,4 +19,7 @@
 // })
 let button = document.querySelector("button");
 let action = () => alert("Bienvenido!");
+let toggle = () => button.classList.toggle("red");
+
 button.addEventListener("click", action);
+button.addEventListener("click", toggle);
