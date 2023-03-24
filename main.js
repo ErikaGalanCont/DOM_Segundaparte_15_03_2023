@@ -17,4 +17,8 @@
 // btn.addEventListener("focus", (e)=>{
 //     console.log("Sali del boton");
 // })
-
+const button = document.querySelector("button");
+function action() {
+    alert("Bienvenido!");
+};
+button.addEventListener("click", action);
